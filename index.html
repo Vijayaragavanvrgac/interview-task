@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- html -->
+    <div class="menu">
+        <div class="menu2">
+            <img src="person1.png" alt="User">
+            <p> <strong>D.O.C:</strong> 28.04.2023</p>
+            <P> <strong>Status:</strong> Complete</P>
+            <button><a href="index2.html">Back Home</a></button>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+        <div class="header">
+            <button>ADD Beneficiaries</button>
+            <button>ADD Asset</button>
+            <button>ADD Liability</button>
+            <button>CREATE Links</button>
+            <button>ADD Signatures</button>
+            <button>Will Generation</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Relationship</th>
+                    <th>Date of Birth</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="beneficiaryTable"></tbody>
+        </table>
+
+        <div class="container">
+            <h2>Add New Beneficiary</h2>
+            <div class="box">
+                <label id="label1" >S.No</label>
+                <input type="text" id="title" >
+            </div>
+            <div class="box">
+                <label >First Name</label>
+                <input type="text" id="firstName" placeholder="First Name">
+            </div>
+            <div class="box">
+                <label >Relatinship</label>
+                <input type="text" id="relationship" placeholder="Relatinship">
+            </div>
+            <div class="box">
+                <label >Date of Birth</label>
+                <input type="date" id="dateOfBirth">
+            </div>
+            <div class="box">
+                <BUtton onclick="addBeneficiary()">Add Beneficiary</BUtton>
+            </div>
+            
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

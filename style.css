@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    display: flex;
+    background-color: #f5f5f5;
+}
+.menu{
+    background-color: #003366;
+    color: #fff;
+    height: 90vh;
+    width: 20%;
+    min-width: 245px;
+    border-radius: 4px;
+
+}
+.menu2{
+    padding: 20px;
+}
+.menu2 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.menu2 p{
+    margin: 10px 0;
+}
+.menu2 strong{
+    color: black;
+}
+.menu2 button{
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 8px ;
+}
+.menu2 a{
+    color: black;
+    text-decoration: underline;
+    transition: 0.5s; 
+}
+.menu2 a:hover{
+    color: red;
+}
+/* content */
+.content{
+    flex: 1;
+    padding: 20px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.header button{
+    padding: 10px 15px;
+    background-color: #673ab7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+/* table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 22px;
+}
+th,td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #f2f2f2;
+}
+.status-active{
+    color: green;
+}
+.status-inactive{
+    color: red;
+}
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px 0px;
+}
+.box{
+    margin-bottom: 20px;
+}
+#label1{
+    margin-top: 5px;
+}
+.box label{
+    display: block;
+    margin-bottom: 5px;
+}
+.box input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.box button{
+    padding: 10px 15px;
+    background-color: #673ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+@media(max-width:768px){
+    body{
+        flex-direction: column;
+    }
+    .menu{
+        width: 100%;
+        justify-items: center;
+        align-content: center;
+        height: 250px;
+    }
+    
+}

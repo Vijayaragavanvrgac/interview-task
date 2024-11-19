@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My-Will Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div id="one">My Will</div>
+  
+<div class="first">
+    <div class="box">
+        <h1>Good morning, Vinoth!</h1>
+        <p id="date">Today is August 27, 2018</p>
+    </div>
+  
+  <div class="icons">
+    <input type="text" class="Search" onkeyup="myFunction()" placeholder="Search" >
+    <button class="icon"><i class="fas fa-bell"></i><sup>3</sup></button>
+    <button class="icon"><i class="fas fa-cog" ></i></button>
+    <button class="icon"><i class="fas fa-sign-in-alt"></i></button>
+</div>
+</div>
+
+<!-- container -->
+<div class="container">
+  <div class="content">
+    <div class="card">
+      <div class="card-first">
+        <img src="person1.png"  alt="Profile">
+        <div>
+          <h2>Ethan Will</h2>
+          <p id="date">Date of Creation: 04/12/1988</p>
+          <p id="status">Status: Complete</p>
+          <h3 id="asset-value">₹ 2.5 Lakhs</h3>
+          <p>Worth assets today</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="box1">
+          <h3 id="number">10</h3>
+          <p>Active Assets</p>
+        </div>
+        <div class="box1">
+          <h3 id="number1">3</h3>
+          <p>Active Liabilities</p>
+        </div>
+        <div class="box1">
+          <h3 id="number2">15</h3>
+          <p>Active Beneficiaries</p>
+        </div>
+        <div class="box1">
+          <h3 id="number3">3</h3>
+          <p>Active Signatories</p>
+        </div>
+      </div>
+      <button class="button1" id="demo" onclick="addNewAsset()">Add New Asset</button>
+      <button class="button1" onclick="updateAssetvalue()">Update Asset Value</button>
+    </div>
+
+    <div class="card2">
+      <h2>Signatory Will</h2>
+      <div class="box2">
+        <div class="box3" >
+          <img src="person2.png" height="50px", width="50px" alt="User">
+          <h3>Liam</h3>
+          <p>Witness</p>
+          <p>Date: 28.04.2013</p>
+          <p>Status: Complete</p>
+        </div>
+        <div class="box3" >
+          <img src="person2.png" height="50px", width="50px" alt="User">
+          <h3>Liam</h3>
+          <p>Witness</p>
+          <p>Date: 28.04.2013</p>
+          <p>Status: Complete</p>
+        </div>
+        <div class="box3" >
+          <img src="person2.png" height="50px", width="50px" alt="User">
+          <h3>Liam</h3>
+          <p>Witness</p>
+          <p>Date: 28.04.2013</p>
+          <p>Status: Complete</p>
+        </div>
+      </div>
+      <button class="button1" onclick="viewInvitations()">View Invitations</button>
+    </div>
+  </div>
+</div>
+<script src="script2.js"></script>
+
+</body>
+</html>
